@@ -30,6 +30,7 @@
               <td><%= link_to @book_detail.title, book_path(@book_detail.id) %></td>
 
               <td><%= @book_detail.body %></td>
+              <td id="favorite_btn_<%= book.id %>">
               <td><%= render "favorites/btn", book: @book_detail %></td>
               <td>コメント数： <%= @book_detail.book_comments.count %></td>
 
